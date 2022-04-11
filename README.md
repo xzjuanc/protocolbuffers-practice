@@ -18,10 +18,10 @@ https://github.com/protocolbuffers/protobuf/releases
 **Add enviroment variable for executing**\
 ![alt text](images/enviroment_variable.PNG)  
 
-**Verify installation**
+**Verify installation**\
 ![alt text](images/verify.PNG)  
 
-**Install Google Protocol Buffer Module**
+**Install Google Protocol Buffer Module**\
 npm i google-protobuf
 
 # Compiling .proto for Javascript
