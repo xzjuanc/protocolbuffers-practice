@@ -12,10 +12,10 @@ https://github.com/protocolbuffers/protobuf/releases
 
 ![alt text](images/download.PNG)  
 
-**Save and unzip on the path you like**
+**Save and unzip on the path you like**\
 ![alt text](images/unzip.PNG)  
 
-**Add enviroment variable for executing**
+**Add enviroment variable for executing**\
 ![alt text](images/enviroment_variable.PNG)  
 
 **Verify installation**
