@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message President{
+    int32 id = 1;
+    string name = 2;
+    float salary = 3;
+    bool coima = 4;
+}
+
+message Presidents{
+    repeated President presidents = 1;
+}
+
