@@ -1,4 +1,5 @@
 const president = require('./president_pb');
+const presidents = require('./presidents_pb');
 const fs = require('fs');
 
 const fujimori = new president.President();
@@ -34,17 +35,17 @@ console.log("President PPK Name: "+ ppk.getName());
 console.log("President PPK Salary: "+ ppk.getSalary());
 console.log("President PPK Coima: "+ ppk.getCoima());
 
-const presidentes = new president.Presidents();
-presidentes.addPresidents(fujimori);
-presidentes.addPresidents(alangarcia);
-presidentes.addPresidents(ppk);
+const presidentes = new presidents.Presidents();
+presidentes.addPresident(fujimori);
+presidentes.addPresident(alangarcia);
+presidentes.addPresident(ppk);
 
 console.log("binary data :"+ presidentes.serializeBinary());
 
 const binaryPresidentsData = presidentes.serializeBinary();
 fs.writeFileSync("presidentsBinary", binaryPresidentsData);
 
-const rawDataPresidents = president.Presidents.deserializeBinary(binaryPresidentsData);
+const rawDataPresidents = presidents.Presidents.deserializeBinary(binaryPresidentsData);
 
 console.log(rawDataPresidents.array[0][0]);
 console.log(rawDataPresidents.array[0][1]);

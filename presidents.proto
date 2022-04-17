@@ -1,17 +1,9 @@
 syntax = "proto3";
+import "president.proto";
 
 option optimize_for = SPEED;
 option cc_generic_services = false;
 
-message President{
-    int32 id = 1;
-    string name = 2;
-    float salary = 3;
-    bool coima = 4;
-}
-
-/*
 message Presidents{
     repeated President president = 1;
 }
-*/
